@@ -4,8 +4,43 @@
 <head>
     <title>Ứng dụng máy tính</title>
 </head>
+
 <body>
     Máy tính<br>
     <input type="number" id="amount1" />
     <input type="number" id="amount2" /><br>
+    <button onclick="cong()">Cộng</button>
+    <button onclick="tru()">Trừ</button>
+    <button onclick="nhan()">Nhân</button>
+    <button onclick="chia()">Chia</button>
+    <span id="result"></span>
+
+    <script>
+        function cong() {
+            var amount1 = document.getElementById("amount1").value;
+            var amount2 = document.getElementById("amount2").value;
+            var result = parseInt(amount1) + parseInt(amount2);
+            document.getElementById("result").innerHTML = result;
+        }
+        function tru() {
+            var amount1 = document.getElementById("amount1").value;
+            var amount2 = document.getElementById("amount2").value;
+            var result = parseInt(amount1) - parseInt(amount2);
+            document.getElementById("result").innerHTML = result;
+        }    
+        function nhan() {
+            var amount1 = document.getElementById("amount1").value;
+            var amount2 = document.getElementById("amount2").value;
+            var result = parseInt(amount1) * parseInt(amount2);
+            document.getElementById("result").innerHTML = result;
+        }    
+        function chia() {
+            var amount1 = document.getElementById("amount1").value;
+            var amount2 = document.getElementById("amount2").value;
+            var result = parseInt(amount1) / parseInt(amount2);
+            document.getElementById("result").innerHTML = result;
+        }    
+    </script>
 </body>
+
+</html>
