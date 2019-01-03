@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập if..else..if</title>
+</head>
+
+<body>
+    <script>
+        var userName = prompt('Tên đăng nhập', '');
+        var pass = prompt('Mật khẩu', '');
+        if (userName == 'admin') {
+            if (pass == 'the master') {
+                alert('Wellcome');
+            } else if (pass == 'null') {
+                alert('Canceled');
+            } else {
+                alert('Wrong password');
+            }
+        } else if (userName == 'null') {
+            alert('Canceled');
+        } else {
+            alert('I dont know you');
+        }
+
+    </script>
+</body>
