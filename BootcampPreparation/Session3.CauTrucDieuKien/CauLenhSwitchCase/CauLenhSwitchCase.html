@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <h1>Ứng dụng tính số ngày trong tháng</h1>
+</head>
+
+<body>
+    <form>
+        <input type="number" id="ngay">
+        <input type="button" value="Tính số ngày" onclick="ketqua()">
+    </form>
+        <p id="ketqua"></p>
+    <script>
+        function ketqua() {
+            var songay = document.getElementById("ngay").value;
+            switch (songay) {
+                case '1':
+                case '3':
+                case '5':
+                case '7':
+                case '8':
+                case '10':
+                case '12':
+                    document.getElementById("ketqua").innerHTML = "Tháng " + songay + " có 31 ngày";
+                    break
+
+            }
+        }
+    </script>
+
+</body>
