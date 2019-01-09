@@ -1,0 +1,16 @@
+<script>
+    // Khai báo
+    var x = [-3, 5, 1, 3, 2, 10];
+    var max = x[0];
+    var maxPosition = 0;
+    // Running
+    for (i = 1; i < x.length; i++) {
+        if (max < x[i]) {
+            max = x[i];
+            maxPosition = i;
+        }
+
+    }
+    alert("max: " + max + " at position " + maxPosition);
+
+</script>
