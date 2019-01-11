@@ -1,0 +1,30 @@
+<body>
+    <input type="text" id="keyword">
+    <input type="button" value="Translate" id="tran" onclick="dich()"><br>
+    <p id="showResuilt"></p>
+</body>
+<script>
+    function dich() {
+        var a = document.getElementById("keyword").value;
+        var en = ['banana', 'orange', 'apple', 'lemon', 'water lemon', 'car', 'phone'];
+        var vi = ['Chuối', 'Cam', 'Táo', 'Chanh', 'Bí đao', 'Xe hơi', 'Điện thoại']
+        var index = -1;
+        // tìm ra từ nhập vào trong mảng tiếng anh
+        for (var i in en) {
+            if (a === en[i]) {
+                index = i;
+
+                break;
+            }
+
+        }
+
+        // hiển thị kết quả
+        if (index >= 0) {
+            document.getElementById("showResuilt").innerText = vi[index];
+        } else {
+            document.getElementById("showResuilt").innerText = "Không tìm thấy từ nào";
+        }
+
+    }
+</script>
